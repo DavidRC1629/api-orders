@@ -3,5 +3,7 @@ target/
 .classpath
 .project
 .idea/
+.vscode/
+jmeter.log
 *.jtl
 reporte_jmeter/
