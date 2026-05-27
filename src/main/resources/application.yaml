@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    # Usamos host.docker.internal para conectar a tu MySQL en Windows desde Docker
+    url: jdbc:mysql://localhost:3306/ecommerce_db2?serverTimezone=America/Lima&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: admin # Cambia por tu pass real si es otra
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update # Esto creará las tablas automáticamente
+    show-sql: true
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+server:
+  port: 8080
